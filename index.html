@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savarankiška JS užduotis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Užduoties aprašymas yra pateiktas script.js faile, kuris yra js aplanke -->
+    <div class="box">
+      <div class="box__inner  search">
+        <div class="box__inner search__text">
+          <div class="search__headline">
+            <h1>Filtravimo (paieškos) aplikaciją</h1>
+          </div>
+          <div class="txt">
+            <p>
+              vartotojas gali pasirinkti vieną iš pastarūjų 20 metų NBA
+              (krepšinio lygos) sezonų t.y. nuo 2000 metų iki 2019 metų ir
+              išsifiltruoti informaciją t.y. kas atitinkamą sezoną:
+            </p>
+            <ol class="ordered_list">
+              <li>Tapo NBA lygos čempionais (champion)</li>
+              <li>Tapo NBA lygos vicečempionais (runnerUp)</li>
+              <li>
+                Laimėjo finalo serijos naudingaiuso žaidėjo apdovanojimą
+                (finalsMVP)
+              </li>
+              <li>
+                Laimėjo reguliaraus sezono naudingiauso žaidėjo apdovanojimą
+                (mvp)
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="box__inner  search__inputs">
+          <form id="form">
+            <button type="Submit" value="Submit form">
+              Submit form
+            </button>
+            <select class="select year" id="selectYear">
+              <option value="nul" placeholder="-------"></option>
+            </select>
+            <select class="select" id="selectChamp">
+              <option placeholder="-------"></option>
+              <option value="champion">champion</option>
+              <option value="runnerUp">runnerUp</option>
+            </select>
+            <select class="select" id="selectMVP">
+              <option placeholder="-------"></option>
+              <option value="finalsMVP">finalsMVP</option>
+              <option value="mvp">mvp</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="box__inner  info">
+        <div class="box__inner  info__img"></div>
+        <div class="box__inner  info__txt">
+          <h2 class="box__inner  headline"></h2>
+          <p class="box__inner  text"></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
